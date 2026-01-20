@@ -14,18 +14,7 @@ La autenticación se realiza mediante un **Personal Access Token**, el cual se l
 El backend consulta la información del usuario autenticado y sus repositorios públicos utilizando la **GitHub REST API** y procesa los datos obtenidos.
 
 El frontend es una interfaz simple en **HTML, JavaScript y CSS**, servida desde el mismo backend, que consume los endpoints expuestos y muestra el nombre del usuario, la cantidad de repositorios y la lista de repositorios con su número de estrellas.
----
 
-## Ejecución
-
-1. git clone <url-del-repositorio>
-2. cd github-api
-3. npm install
-4. cd src 
-5. node main.js
-
-Una vez ejecutado el servidor, abrir un navegador web y acceder a la siguiente URL para visualizar el frontend:
-http://localhost:3000
 ---
 
 ## Variables de entorno necesarias
@@ -34,3 +23,33 @@ Crear un archivo `.env` (en la raíz del proyecto) con:
 ```env
 GITHUB_TOKEN=ghp_tu_token_aqui
 PORT=3000
+```
+
+## Ejecución
+
+1. clonar repositorio
+``` bash
+git clone <url-del-repositorio>
+```
+2. entrar a proyecto
+ ``` bash
+cd github-api
+```
+3.Instalar dependencias
+ ``` bash
+npm install
+```
+4. Entrar a la carpeta `src`
+``` bash
+cd src
+```
+7.Ejecutar
+   ``` bash
+node main.js
+```
+
+Una vez ejecutado el servidor, abrir un navegador web y acceder a la siguiente URL para visualizar el frontend:
+http://localhost:3000
+
+---
+
